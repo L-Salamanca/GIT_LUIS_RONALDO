@@ -1,4 +1,5 @@
-# Proyecto de Gestión de Ninjas y Misiones
+# PROYECTO GIT_LUIS_RONALDO
+# NARUTOMANIA
 
 Este proyecto se enfoca en la gestión integral de información sobre ninjas y sus misiones, inspirado en el popular universo de Naruto. 
 La aplicación ofrece una variedad de funcionalidades que permiten a los usuarios interactuar y administrar los datos de los ninjas de
