@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "ninjas",
-        "opciones"
+        "opciones",
+        "menu"
     ]
 }
