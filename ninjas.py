@@ -27,4 +27,12 @@ def modificar_ninja(data):
         ninja["Rango"] = input("Ingrese el rango del ninja a modificar: ")
         data[Nombre] = ninja
         guardar_datos(data)
+        print("")
+        print("-------------------------------------------")
+        print("------ NINJA MODIFICADO EXITOSAMENTE ------")
+        print("-------------------------------------------")
+    else:
+        print("LO SENTIMOS, ESTE NINJA NO ESTA REGISTRADO EN NARUTOMANIA")
+    print("")
+    print("")
        
