@@ -35,4 +35,14 @@ def modificar_ninja(data):
         print("LO SENTIMOS, ESTE NINJA NO ESTA REGISTRADO EN NARUTOMANIA")
     print("")
     print("")
+    
+def mostrarninjas(data):
+    print("--------------------------------------------------")
+    for nombre, info in data.items():
+        print(f"Nombre: {nombre}")
+        for key, value in info.items():
+            print(f"{key}: {value}")
+        print("--------------------------------------------------")
+    print("")
+    print("")
        
