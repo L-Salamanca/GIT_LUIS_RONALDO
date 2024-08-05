@@ -4,6 +4,7 @@ from data import guardar_datos, cargar_datos
 
 ninjas = cargar_datos()
 
+
 def ingresar_ninja(data):
     print("--------------------------------------------------")
     ninja = {}
@@ -36,6 +37,21 @@ def modificar_ninja(data):
         print("")
         print("-------------------------------------------")
         print("------ NINJA MODIFICADO EXITOSAMENTE ------")
+        print("-------------------------------------------")
+    else:
+        print("LO SENTIMOS, ESTE NINJA NO ESTA REGISTRADO EN NARUTOMANIA")
+    print("")
+    print("")
+    
+def eliminar_ninja(data):
+    print("--------------------------------------------------")
+    Nombre = input("Ingrese el Nombre del ninja que desea eliminar: ")
+    if data.get(Nombre, None) is not None:
+        del data[Nombre]
+        guardar_datos(data)
+        print("")
+        print("-------------------------------------------")
+        print("------ NINJA ELIMINADO EXITOSAMENTE ------")
         print("-------------------------------------------")
     else:
         print("LO SENTIMOS, ESTE NINJA NO ESTA REGISTRADO EN NARUTOMANIA")
