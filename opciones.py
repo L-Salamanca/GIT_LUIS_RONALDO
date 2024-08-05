@@ -1,3 +1,6 @@
+from ninjas import *
+from misiones import *
+
 opc_menup = ("1. Ingresar Ninja","2. Modificar Ninja","3. Eliminar Ninja","4. Mostrar Ninjas","5. Agregar Misiones","6. Asignar Misiones","7. Para salir")
 
 def menup():
