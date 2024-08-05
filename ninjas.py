@@ -16,4 +16,15 @@ def ingresar_ninja(data):
         print("LO SENTIMOS ESTE NINJA YA ESTA REGISTRADO EN NARUTOMANIA")
     print("")
     print("")
+    
+def modificar_ninja(data):
+    print("--------------------------------------------------")
+    ninja = {}
+    Nombre = input("Ingrese el Nombre del ninja que desea modificar: ")    
+    if data.get(Nombre, None) is not None:
+        ninja["Numero Misiones"] = int(input("Ingrese el numero de misiones que ha realizado el ninja a modificar: "))
+        ninja["Aldea"] = input("Ingrese la aldea a la que pertenece el ninja a modificar: ")
+        ninja["Rango"] = input("Ingrese el rango del ninja a modificar: ")
+        data[Nombre] = ninja
+        guardar_datos(data)
        
