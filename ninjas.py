@@ -8,4 +8,12 @@ def ingresar_ninja(data):
         ninja["Rango"] = input("Ingrese el rango del ninja a ingresar: ")
         data[Nombre] = ninja
         guardar_datos(data)
+        print("")
+        print("-------------------------------------------")
+        print("------ NINJA REGISTRADO EXITOSAMENTE ------")
+        print("-------------------------------------------")
+    else:
+        print("LO SENTIMOS ESTE NINJA YA ESTA REGISTRADO EN NARUTOMANIA")
+    print("")
+    print("")
        
