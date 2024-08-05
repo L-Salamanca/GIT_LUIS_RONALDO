@@ -1,3 +1,7 @@
+import opciones
+from misiones import *
+from data import guardar_datos, cargar_datos
+
 def ingresar_ninja(data):
     print("--------------------------------------------------")
     ninja = {}
