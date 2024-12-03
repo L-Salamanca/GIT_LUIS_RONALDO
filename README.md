@@ -1,59 +1,87 @@
-# PROYECTO GIT_LUIS_RONALDO
-# NARUTOMANIA
 
-Este proyecto se enfoca en la gestión integral de información sobre ninjas y sus misiones, inspirado en el popular universo de Naruto. 
-La aplicación ofrece una variedad de funcionalidades que permiten a los usuarios interactuar y administrar los datos de los ninjas de
-manera eficiente y ordenada.
+# **NARUTOMANIA**  
 
-Entre las características principales, la aplicación permite agregar nuevos ninjas, proporcionando un formulario interactivo que recolecta detalles específicos como el nombre del ninja,
-su aldea de origen, el número de misiones completadas y su rango dentro de la jerarquía ninja.
+Un proyecto inspirado en el universo de *Naruto*, enfocado en la gestión de información sobre ninjas y sus misiones. Esta aplicación ofrece un sistema robusto para administrar datos de manera eficiente y ordenada, utilizando Python y almacenamiento en archivos JSON.
 
+---
 
-Además, se incluye la capacidad de modificar la información existente de los ninjas, lo cual es crucial para mantener los datos actualizados y reflejar cualquier cambio en sus misiones, 
-rango o afiliaciones. La funcionalidad de eliminación permite a los usuarios depurar la base de datos de ninjas, asegurando que solo la información relevante y actualizada se conserve.
+## 📌 **Objetivos del Proyecto**  
 
-La aplicación también cuenta con una función para mostrar todos los ninjas registrados, presentando la información de manera clara y organizada, lo que facilita la visualización y 
-revisión de los datos. A esto se suma la gestión de misiones, que incluye la posibilidad de agregar nuevas misiones y asignarlas a los ninjas correspondientes,
-permitiendo un seguimiento detallado de las actividades y logros de cada ninja.
+- Crear un sistema CRUD para la gestión de ninjas y misiones.  
+- Almacenar y recuperar datos de manera persistente.  
+- Ofrecer una interfaz clara y fácil de usar.  
+- Demostrar habilidades en desarrollo de aplicaciones con Python.  
 
-Con un enfoque en la facilidad de uso y la persistencia de datos, esta aplicación utiliza archivos JSON para almacenar la información,
- garantizando que los datos se mantengan entre sesiones y permitiendo una manipulación y almacenamiento de datos más robusta. 
-Este proyecto no solo facilita la gestión de los personajes dentro del mundo ficticio de Naruto, sino que también sirve como un excelente ejemplo de cómo estructurar
-y gestionar información en una aplicación de la vida real, utilizando Python para la lógica y manejo de datos.
+---
 
-## Tabla de Contenidos
+## 🛠️ **Funcionalidades Principales**  
 
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Funcionalidades](#funcionalidades)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
+- **Registrar Ninjas:**  
+  Agrega nuevos ninjas con detalles específicos:  
+  - Nombre del ninja.  
+  - Aldea de origen.  
+  - Número de misiones completadas.  
+  - Rango dentro de la jerarquía ninja.  
 
-## Instalación
+- **Gestionar Información:**  
+  - **Actualizar Datos:** Modifica la información de los ninjas.  
+  - **Eliminar Ninjas:** Borra registros antiguos o incorrectos.  
+  - **Listar Ninjas:** Muestra una lista detallada y organizada de todos los ninjas registrados.  
 
-1. Clona el repositorio:
+- **Administrar Misiones:**  
+  - Asigna nuevas misiones a los ninjas.  
+  - Realiza un seguimiento detallado de cada misión.  
 
-    ```bash
-    git clone https://github.com/
-    ```
+---
 
-2. Navega al directorio del proyecto:
+## 📂 **Estructura del Proyecto**  
 
-    ```bash
-    cd ninjas-misiones
-    ```
+```plaintext
+NARUTOMANIA/
+│
+├── README.md          # Documentación del proyecto  
+├── menu.py            # Archivo principal del programa  
+├── ninjas.json        # Almacenamiento de datos de ninjas  
+└── src/  
+    ├── ninja_crud.py  # Lógica CRUD para ninjas  
+    └── mission_crud.py # Gestión de misiones  
+```
 
+---
 
+## 🚀 **Instalación**  
 
-## Uso
+1. **Clonar el Repositorio:**  
+   ```bash  
+   git clone https://github.com/usuario/narutomania.git  
+   ```  
 
-Para ejecutar el programa, simplemente ejecuta el archivo `menu.py`:
+2. **Navegar al Directorio del Proyecto:**  
+   ```bash  
+   cd narutomania  
+   ```  
 
-## COLABORADORES
+3. **Ejecutar el Proyecto:**  
+   ```bash  
+   python menu.py  
+   ```  
 
-Proyecto creado por Luis Fernando Pérez Salamanca y Ronaldo Antonio Oviedo
+---
 
+## 💡 **Ejemplo de Uso**  
 
-```bash
-python menu.py
+| Acción                    | Comando                   | Descripción                                      |  
+|---------------------------|---------------------------|--------------------------------------------------|  
+| **Agregar Ninja**         | `add_ninja()`             | Registra un nuevo ninja en la base de datos.     |  
+| **Actualizar Información**| `update_ninja(id)`        | Edita los detalles de un ninja existente.        |  
+| **Eliminar Ninja**        | `delete_ninja(id)`        | Elimina un ninja específico del registro.        |  
+| **Ver Todos los Ninjas**  | `list_ninjas()`           | Muestra la lista completa de ninjas registrados. |  
+
+---
+
+## 👥 **Colaboradores**  
+
+- **Luis Fernando Pérez Salamanca**  
+- **Ronaldo Antonio Oviedo**  
+
+---
